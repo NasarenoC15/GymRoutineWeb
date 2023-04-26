@@ -1,0 +1,25 @@
+Programa de Rutina de Ejercicios modificable diaria de lunes a domingo.
+
+a)Visual De la aplicacion web en react
+b)Api de la aplicacion
+c)Base de datos de la aplicacion
+
+
+a{
+    1)Login de la aplicacion con Registro con un maximo de usuarios de 500-1000
+    2)Apartado de Creacion de la rutina diaria de (Lun-Dom) con Modificacion , ampliacion y eliminar
+    3)Mostrar Por Dia de la semana que toca hacer con un boton check a la izquierda de realizado el ejercicio o no("No se manda a la base de datos").
+        Por defecto va la el dia de la semana actual , permitiendo con un select cambiar de opcion.
+    4)EXTRA="Se puede agregar como ("Recompenza") una alerta de que completo todos los ejercicios del dia , y tambien de la semana."
+}
+
+b{
+    1)Creacion de Usuario , Verificando el limite maximo.
+    2) Login de Usuario.
+    3) Tomando en cuenta el dia del dispositivo mostrar por defecto esa rutina.
+    4)Crear la rutina en la seccion de rutina , Editar, Eliminar.
+}
+
+c{
+    1)Creacion de tablas correspondientes con sus datos adecuados , ver mas adelante.
+}
