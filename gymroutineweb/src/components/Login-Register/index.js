@@ -1,5 +1,5 @@
 import React from "react";
-import ImageLogin from "../../assets/img/ImageLogin.jpg";
+import ImageLogin from "../../assets/img/ImageLogin2.jpg";
 
 const Login = () => {
   return (
@@ -11,10 +11,10 @@ const Login = () => {
       }}
       >
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 opacity-80">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 opacity-70">
             <div className="card-body">
               <div className="form-control">
-                <span className="mb-3 text-xl">Iniciar Sesion Para ver Rutina</span>
+                <span className="mb-3 text-xl text-white">Iniciar Sesion Para ver Rutina</span>
                 <label className="label">
                   <span className="label-text">Correo Electronico</span>
                 </label>
@@ -29,7 +29,7 @@ const Login = () => {
                   <span className="label-text">Contraseña</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Contraseña"
                   className="input input-bordered"
                 />
@@ -37,6 +37,9 @@ const Login = () => {
                   <a href="#" className="label-text-alt link link-hover">
                     Olvidaste la Contraseña?
                   </a>
+                  {
+                    //Boton de mostrar contraseña
+                  }
                 </label>
               </div>
               <div className="form-control">

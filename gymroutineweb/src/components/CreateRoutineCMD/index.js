@@ -1,12 +1,12 @@
-import React from 'react'
-import "./style.css"
+import React from "react";
+import "./style.css";
 
 const CreateRoutine = () => {
   return (
     <div>
-        <div className="text-center mb-10">
+      <div className="text-center mb-10">
         <h1 className="text-4xl text-yellow-500 mb-10">
-          Que toca Entrenar Hoy?
+          Crear Rutina de Ejercicios
         </h1>
         <form className="mb-5">
           <div
@@ -22,7 +22,7 @@ const CreateRoutine = () => {
             {
               //On change se debe de cambiar el valor de la variable "date" para que se pueda hacer la consulta a la base de datos.
             }
-            <select id="SelectOptions" >
+            <select id="SelectOptions">
               <option value="Select" id="Select" selected disabled>
                 Seleccione un Dia
               </option>
@@ -57,8 +57,7 @@ const CreateRoutine = () => {
             display: "block",
             borderRadius: 20,
           }}
-        >
-        </div>
+        ></div>
         <div
           className="mb-5"
           style={{
@@ -72,32 +71,45 @@ const CreateRoutine = () => {
               // Aca va un mapeo de los ejercicios  de ese dia
             }
             <div>
-              <div className="mb-1">
-                <span>Empresa:&nbsp;&nbsp;</span>
-                <span>Nombre del Corredor</span>
-              </div>
-              <div className="mb-1">
-                <span>Telefono Empresa:&nbsp;&nbsp;</span>
-                <span>Numero de Telefono</span>
-              </div>
-              <div className="mb-1">
-                <span>Vendedor:&nbsp;&nbsp;</span>
-                <span>Nombre del Corredor</span>
-              </div>
-              <div className="mb-1">
-                <span>Telefono Vendedor:&nbsp;&nbsp;</span>
-                <span>Numero de Telefono</span>
-              </div>
-              <div className="mb-1">
-                <span>Hora Del Dia Aproximada:&nbsp;&nbsp;</span>
-                <span>Hora</span>
+              <div>
+                <div className="mb-1">
+                  <span className=" text-lg">Ejercicio:&nbsp;&nbsp;</span>
+                  <input
+                    placeholder="Ingrese Nombre del Ejercicio"
+                    style={{ width: 600 }}
+                  ></input>
+                </div>
+                <div className="mb-1">
+                  <span className=" text-lg">Series:&nbsp;&nbsp;</span>
+                  <input
+                    placeholder="Ingrese Cantidad de Series"
+                    style={{ width: 600 }}
+                  ></input>
+                </div>
+                <div className="mb-1">
+                  <span className=" text-lg">Repeticiones:&nbsp;&nbsp;</span>
+                  <input
+                    placeholder="Ingrese Cantidad de Repeticiones"
+                    style={{ width: 600 }}
+                  ></input>
+                </div>
+                <div className="mb-1">
+                  <span className=" text-lg">Tiempo de Descanso:&nbsp;&nbsp;</span>
+                  <input
+                    placeholder="Ingrese Tiempo de Descanso"
+                    style={{ width: 600 }}
+                  ></input>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div>
+          <button className="btn btn-success">Confirmar Rutina</button>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CreateRoutine
+export default CreateRoutine;
